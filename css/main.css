@@ -2,29 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
     background-color: black;
     font-family: cursive;
+}
+/*STYLE FOR THE TITLE*/
+h1 {
+    margin-top: 40px;
+    color: #669900;
+    text-align: center;
 }
 
 /*Llamamos a nuestra tabla creada en html*/
 .board {
+    text-align: center;    
     margin: 100px auto 0; /*centramos la tabla*/
-    /*border-collapse: collapse; /*Junta todos los bordes de la celda*/
 }
 
 /*Aplicamos estilo a cada celda de nuestra tabla*/
-.board td {
+.row {
+    display:block;    
+}
+
+.cell {
     width: 100px;
     height: 100px;
     border: 1px solid white;
-    color: white;
-    /*text-align: center;*/
-    font-size: 70px;
-    font-weight: bold;
+    display: inline-block;
+    margin: 0px 15px 4px 0px;
 }
-
 /*Aplicamos hover(cuando pasa por encima de la celda cambie de color (hace alucion a que va a seleccionar esa celda) para cada celda de la tabla*/
-.board td:hover {
-    background-color: yellow;
+.board .cell:hover {
+    background-color: #F1C40F;
 }

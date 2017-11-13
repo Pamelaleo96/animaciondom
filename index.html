@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Animación con DOM</title>
-     <!--Agregamos una imagen a nuestra pestaña del navegador-->
-     <link rel="shorcut icon" type="image/pamela.jpg" href="assets/images/tictactoe.png">
      <!--Linkeamos nuestro archivo externo main.css para que pueda dar estilo a nuestro documento html-->
      <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-     <!--Creamos una tabla con 3 filas y 3 columnas-->
-     <table class="board board-js">
-        <tbody>
-             <tr>
-                    <td id="c1"></td>
-                    <td id="c2"></td>
-                    <td id="c3"></td>
-                    <td id="c4"></td>
-                </tr>
-                <tr>
-                    <td id="c5"></td>
-                    <td id="c6"></td>
-                    <td id="c7"></td>
-                    <td id="c8"></td>
-                </tr>
-                <tr>
-                    <td id="c9"></td>
-                    <td id="c10"></td>
-                    <td id="c11"></td>
-                    <td id="c12"></td>
-                </tr>
-            </tbody>
-        </table>
-    
+    <!--Creamos nuestro titulo-->
+    <h1>Animación en el DOM</h1>
+    <!--Creamos una tabla con 3 filas y 3 columnas-->
+    <div class="board board-js">
+        <div class="row">
+            <div id="c1" class="cell"></div>
+            <div id="c2" class="cell"></div>
+            <div id="c3" class="cell"></div>
+            <div id="c4" class="cell"></div>
+        </div>
+        <div class="row">
+            <div id="c5" class="cell"></div>
+            <div id="c6" class="cell"></div>
+            <div id="c7" class="cell"></div>
+            <div id="c8" class="cell"></div>
+        </div>
+        <div class="row">
+            <div id="c9" class="cell"></div>
+            <div id="c10" class="cell"></div>
+            <div id="c11" class="cell"></div>
+            <div id="c12" class="cell"></div>
+        </div>
+    </div>
+    <!--Enlazamos nuestro archivo externo app.js-->
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
